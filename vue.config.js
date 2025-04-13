@@ -1,0 +1,1 @@
+const { defineConfig } = require('@vue/cli-service');\n\nmodule.exports = defineConfig({\n  transpileDependencies: true,\n  configureWebpack: {\n    output: {\n      libraryTarget: 'system',\n    },\n    externals: ['vue', 'vue-router', 'vuex', '@travel-booking/shared-lib'],\n  },\n  filenameHashing: false,\n});
